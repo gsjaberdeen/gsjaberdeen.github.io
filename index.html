@@ -1,7 +1,55 @@
 <!DOCTYPE html>
-{% include header.html %}
+
  
+  <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Global Service Jam : Aberdeen : GH</title>
+   
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="/css/main.css">
+
+  <script src="/javascripts/modernizr.foundation.js"></script>
+</head>
+<body>
+ <!-- Header and Nav -->
+<div class="fullwidth heavycontrast">
+    <div class="row">
+      <div class="twelve columns">
+ 
+        <ul class="nav-bar right">
+          <li class=""> <a href="/">Home</a></li>
+          <li class=" "> <a href="/gsj">Global Service Jam</a></li>
+          <li class=" "> <a href="/htg">Why Should I Come?</a></li>
+          <li class=" "> <a href="/sponsorus">Sponsor Us</a> </li>
+         <li class=""> <a href="#contact">Get in touch</a> </li>
+        </ul>
+
+
+
+      </div>
+    </div>
+  </div>
   
+  <div class="fullwidth contrast breath">
+    <div class="row">
+      <div class="twelve columns">
+        <h1>One great global event with an Aberdeen presence</h1>
+        <h3>Friday, 26 February to Sunday, 28 February 2016, Aberdeen</h3>
+         <a href="http://gsjaberdeen-2016.eventbrite.co.uk" class="button success right">REGISTER NOW</a> 
+      </div>
+    </div>
+  </div>
+ 
+  <!-- End Header and Nav -->
   
    <div class="fullwidth   breath">
     <div class="row">
@@ -41,9 +89,8 @@
     
   </div>
   
- 
-
-  <div class="row" id="sponsors">
+<!-- footer stuff -->
+<div class="row" id="sponsors">
   <div class="twelve columns">
     <h3><a href="/sponsor.php">Huge thanks to our sponsors</a></3> 
     <div class="row breath">
@@ -53,19 +100,18 @@
         <p><a href="http://abdn.ac.uk/softent">University of Aberdeen</a></p>
       </div>
       <div class="three columns">
-<!--
-        <a href="http://www.designinaction.com"><img src="/img/dia-logo.png" /></a>
-        <p><a href="http://www.designinaction.com">Design in Action</a></p>
-        -->
+        <a href="http://www.abventurezone.com"><img src="/img/ABVenture-Zone.jpg" /></a>
+        
       </div> 
        <div class="three columns"> 
-       <!--
-        <a href="http://www.rgu.ac.uk"><img src="/img/sponsors/rgu.gif" /></a>  
-        <p><a href="http://www.rgu.ac.uk/">RGU</a></p>  
-        -->
+       
+        <a href="https://www.santanderuniversities.co.uk/enterprise/learn/enterprise-tool-kit/business-management"><img src="/img/sponsors/santander-red.png" /></a>  
+        
       </div>
       
       <div class="three columns"> 
+        
+      <a href="http://www.enterprisecampus.org.uk"><img src="/img/EC-Core-Logo-01.png" /></a>
         <!--
         <a href="http://www.stattys.com"><img src="/img/sponsors/stattys2.png" /></a>  
         <p><a href="http://www.stattys.com/">Stattys</a></p>  
@@ -73,9 +119,9 @@
       </div>
 
       <div class="three columns">
-        <!--- a href="http://elevatoruk.com"><img src="/img/sponsors/elevator_logo.jpeg" /></a>  
+        <a href="http://elevatoruk.com"><img src="/img/sponsors/elevator_logo.jpeg" /></a>  
         <p><a href="http://elevatoruk.com">Elevator</a></p>  
-        -->
+        
       </div>  
       <div class="three columns"> 
         <h4>Become a Sponsor</h4>
@@ -171,6 +217,6 @@
          $('#slider').orbit();
      });
   </script>
-  {% include footer.html %}
+
 </body>
 </html>
